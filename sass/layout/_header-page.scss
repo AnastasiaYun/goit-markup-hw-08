@@ -1,0 +1,101 @@
+.header {
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ececec;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: initial;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  left: 0;
+  bottom: 0;
+  margin-left: 50px;
+  & a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+.site-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 0%;
+  height: 5px;
+  background-color: var(--accent-color);
+  transition: width 250ms var(--timing-function);
+}
+.site-nav:hover::after,
+.site-nav:focus::after {
+  width: 100%;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+.site-nav .item {
+  list-style: none;
+  margin-left: 90px;
+}
+
+.nav-border.current {
+  color: var(--accent-color);
+}
+.current {
+  border-bottom: solid 6px var(--accent-color);
+  padding-bottom: 23px;
+  width: 100%;
+}
+.header-mail-tel {
+  align-items: center;
+  font-weight: 500;
+  margin-left: auto;
+  list-style: none;
+}
+.header-mail-tel .item + .item {
+  padding-left: 50px;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+}
+.link-icons-header:hover .icon-contacts-header,
+.link-icons-header:focus .icon-contacts-header {
+  fill: var(--accent-color);
+}
+.icon-contacts-header {
+  fill: var(--title-text-color);
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-icons-header {
+  color: var(--title-text-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
