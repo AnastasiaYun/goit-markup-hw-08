@@ -19,16 +19,16 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -38,13 +38,21 @@ p {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -81,6 +89,20 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -113,6 +135,13 @@ p {
 @media screen and (max-width: 480px) {
   .site-nav {
     display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .site-nav {
+    display: table-cell;
+    padding-right: 50px;
   }
 }
 
@@ -152,6 +181,12 @@ p {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .current {
+    padding-bottom: 34px;
+  }
+}
+
 .header-mail-tel {
   align-items: center;
   font-weight: 500;
@@ -159,13 +194,32 @@ p {
   list-style: none;
 }
 
+@media screen and (max-width: 768px) {
+  .header-mail-tel {
+    padding: 0;
+  }
+}
+
 .header-mail-tel .item + .item {
   padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-mail-tel .item + .item {
+    padding: 0;
+  }
 }
 
 .header-center {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-center {
+    display: block;
+    padding-bottom: 5px;
+  }
 }
 
 .link-icons-header:hover .icon-contacts-header,
@@ -216,7 +270,17 @@ p {
     min-height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bgmobile.jpg);
     background-position: inherit;
-    background-size: contain;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    min-width: 768px;
+    min-height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bgtablet.jpg);
+    background-position: inherit;
+    background-size: cover;
   }
 }
 
@@ -254,6 +318,12 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     padding: 118px 30px 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bgmobile@2x.jpg);
   }
 }
 
@@ -471,6 +541,12 @@ p {
   margin-right: 45px;
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: 80px;
+  }
+}
+
 .logo span {
   color: var(--accent-color);
 }
@@ -494,6 +570,7 @@ section li {
 
 @media screen and (max-width: 480px) {
   section {
+    padding-top: 60px;
     padding-bottom: 0;
   }
 }
@@ -575,7 +652,7 @@ section li {
 }
 
 @media screen and (max-width: 480px) {
-  .section-title {
+  .mobile-no-text {
     display: none;
   }
 }
@@ -638,6 +715,12 @@ section li {
   padding-bottom: 95px;
 }
 
+@media screen and (max-width: 480px) {
+  .section-names {
+    display: inline-block;
+  }
+}
+
 .section-title-names,
 .section-title-position {
   color: var(--primary-text-color);
@@ -662,6 +745,12 @@ section li {
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .section-names-shadow {
+    margin: 30px 0;
+  }
 }
 
 .decoration-no {

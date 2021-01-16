@@ -121,7 +121,7 @@
         <!-- Чем мы занимаемся -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Чем мы занимаемся</h2>
+                <h2 class="section-title mobile-no-text">Чем мы занимаемся</h2>
                 <ul class="img-works list">
                     <li class="works-items list">
                         <img src="./img/img.png" alt="компьютер" width="370" />
@@ -144,7 +144,11 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="section-names list">
                     <li class="section-names-shadow">
-                        <img src="./img/1.jpg" alt="Игорь" width="270" />
+                        <picture>
+                            <source srcset="./img/mobile/img.jpg 1x, ./img/mobile/img@2x.jpg 2x"
+                                media="(max-width: 480px)">
+                            <img src="./img/1.jpg" alt="Игорь" />
+                        </picture>
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Игорь Демьяненко</h3>
                             <p class="section-title-position">Product Designer</p>
@@ -175,7 +179,11 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <img src="./img/2.jpg" alt="Ольга" width="270" />
+                        <picture>
+                            <source srcset="./img/mobile/img2.jpg 1x, ./img/mobile/img2@2x.jpg 2x"
+                                media="(max-width: 480px)">
+                            <img src="./img/2.jpg" alt="Ольга" />
+                        </picture>
                         <div class="section-title-name-position list">
                             <h3 class="section-title-names">Ольга Репина</h3>
                             <p class="section-title-position">Frontend Developer</p>
@@ -206,7 +214,11 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <img src="./img/3.jpg" alt="Николай" width="270" />
+                        <picture>
+                            <source srcset="./img/mobile/img3.jpg 1x, ./img/mobile/img3@2x.jpg 2x"
+                                media="(max-width: 480px)">
+                            <img src="./img/3.jpg" alt="Николай" />
+                        </picture>
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Николай Тарасов</h3>
                             <p class="section-title-position">Marketing</p>
@@ -237,7 +249,11 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <img src="./img/4.jpg" alt="Михаил" width="270" />
+                        <picture>
+                            <source srcset="./img/mobile/img4.jpg 1x, ./img/mobile/img4@2x.jpg 2x"
+                                media="(max-width: 480px)">
+                            <img src="./img/4.jpg" alt="Михаил" />
+                        </picture>
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Михаил Ермаков</h3>
                             <p class="section-title-position">UI Designer</p>
@@ -271,7 +287,7 @@
             </div>
         </section>
         <!-- Постоянные клиенты -->
-        <section class="section center">
+        <!-- <section class="section center">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="clients list">
@@ -320,115 +336,116 @@
                 </ul>
             </div>
         </section>
-    </main>
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="container footer-container-list">
-            <div class="footer-container">
-                <div class="footer-container-items">
-                    <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+    </main> -->
+        <!-- Подвал -->
+        <!-- <footer class="footer">
+            <div class="container footer-container-list">
+                <div class="footer-container">
+                    <div class="footer-container-items">
+                        <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+                    </div>
+                    <ul class="footer-contacts footer-container-items list">
+                        <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="footer-address-mail-tel">
+                            <a href="mailto:">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-address-mail-tel">
+                            <a href="tel:">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="footer-contacts footer-container-items list">
-                    <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li class="footer-address-mail-tel">
-                        <a href="mailto:">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-address-mail-tel">
-                        <a href="tel:">+38 096 111 11 11</a>
+                <ul class="footer-icons list">
+                    <li class="">
+                        <h3 class="section-title-footer">присоединяйтесь</h3>
+                        <a href="" class="link-social-icons-footer">
+                            <svg class="" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="" class="link-social-icons-footer">
+                            <svg class="" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="" class="link-social-icons-footer">
+                            <svg class="" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="" class="link-social-icons-footer">
+                            <svg class="" width="20" height="20">
+                                <use href="./img/sprite.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
+                <form action="#" class="footer-form">
+                    <p class="form-field"> Подпишитесь на рассылку
+                        <span class="form-field-imput">
+                            <label for="email">
+                                <input type="email" placeholder="E-mail" id="email" class="footer-form-email">
+                            </label>
+                            <button class="button btn btn-center" type="submit">Подписаться
+                                <svg class="telegramm-icon" width="24" height="24">
+                                    <use href="./img/sprite.svg#telegram-icon"></use>
+                                </svg>
+                            </button>
+                        </span>
+                    </p>
+                </form>
             </div>
-            <ul class="footer-icons list">
-                <li class="">
-                    <h3 class="section-title-footer">присоединяйтесь</h3>
-                    <a href="" class="link-social-icons-footer">
-                        <svg class="" width="20" height="20">
-                            <use href="./img/sprite.svg#icon-instagram">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="" class="link-social-icons-footer">
-                        <svg class="" width="20" height="20">
-                            <use href="./img/sprite.svg#icon-twitter">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="" class="link-social-icons-footer">
-                        <svg class="" width="20" height="20">
-                            <use href="./img/sprite.svg#icon-facebook">
-                            </use>
-                        </svg>
-                    </a>
-                    <a href="" class="link-social-icons-footer">
-                        <svg class="" width="20" height="20">
-                            <use href="./img/sprite.svg#icon-linkedin">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <form action="#" class="footer-form">
-                <p class="form-field"> Подпишитесь на рассылку
-                    <span class="form-field-imput">
-                        <label for="email">
-                            <input type="email" placeholder="E-mail" id="email" class="footer-form-email">
-                        </label>
-                        <button class="button btn btn-center" type="submit">Подписаться
-                            <svg class="telegramm-icon" width="24" height="24">
-                                <use href="./img/sprite.svg#telegram-icon"></use>
-                            </svg>
-                        </button>
-                    </span>
-                </p>
-            </form>
-        </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="close-btn" data-modal-close>
-                <svg width="18" height="18">
-                    <use href="./img/sprite.svg#icon-close-black-18dp">
-                    </use>
-                </svg>
-            </button>
-            <form action="#" class="form-modal">
-                <p>Оставьте свои данные, мы вам перезвоним</p>
-                <label>Имя
-                    <input type="text" name="user-name">
-                    <svg width="18" height="18" class="form-modal-icons">
-                        <use href="./img/sprite.svg#icon-person-black">
+        </footer> -->
+        <!-- Модалка -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    <svg width="18" height="18">
+                        <use href="./img/sprite.svg#icon-close-black-18dp">
                         </use>
                     </svg>
-                </label>
-                <label>Телефон
-                    <input type="tel" name="user-tel">
-                    <svg width="18" height="18" class="form-modal-icons">
-                        <use href="./img/sprite.svg#icon-phone-black">
-                        </use>
-                    </svg>
-                </label>
-                <label>Почта
-                    <input type="email" name="user-name">
-                    <svg width="18" height="18" class="form-modal-icons">
-                        <use href="./img/sprite.svg#icon-email-black">
-                        </use>
-                    </svg>
-                </label>
-                <label>Комментарий</label>
-                <textarea name="coments" placeholder="Введите текст"></textarea>
-                <span>
-                    <input type="checkbox" class="modal-check visually-hidden" name="checkbox" id="user-checkbox"
-                        value="accept-checkbox">
-                    <label for="user-checkbox" class="modal-check-text">Соглашаюсь с рассылкой и принимаю
-                        <a href="#" class="link-modal-form-checkbox"> Условия
-                            договора</a></label>
-                </span>
-                <button class="button btn" type="submit">Отправить
                 </button>
-            </form>
+                <form action="#" class="form-modal">
+                    <p>Оставьте свои данные, мы вам перезвоним</p>
+                    <label>Имя
+                        <input type="text" name="user-name">
+                        <svg width="18" height="18" class="form-modal-icons">
+                            <use href="./img/sprite.svg#icon-person-black">
+                            </use>
+                        </svg>
+                    </label>
+                    <label>Телефон
+                        <input type="tel" name="user-tel">
+                        <svg width="18" height="18" class="form-modal-icons">
+                            <use href="./img/sprite.svg#icon-phone-black">
+                            </use>
+                        </svg>
+                    </label>
+                    <label>Почта
+                        <input type="email" name="user-name">
+                        <svg width="18" height="18" class="form-modal-icons">
+                            <use href="./img/sprite.svg#icon-email-black">
+                            </use>
+                        </svg>
+                    </label>
+                    <label>Комментарий</label>
+                    <textarea name="coments" placeholder="Введите текст"></textarea>
+                    <span>
+                        <input type="checkbox" class="modal-check visually-hidden" name="checkbox" id="user-checkbox"
+                            value="accept-checkbox">
+                        <label for="user-checkbox" class="modal-check-text">Соглашаюсь с рассылкой и принимаю
+                            <a href="#" class="link-modal-form-checkbox"> Условия
+                                договора</a></label>
+                    </span>
+                    <button class="button btn" type="submit">Отправить
+                    </button>
+                </form>
+            </div>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+        <script src="./js/modal.js"></script>
 </body>
 
 </html>

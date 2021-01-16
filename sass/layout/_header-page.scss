@@ -5,6 +5,14 @@
   padding-top: 20px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
 }
 .main-nav {
   display: flex;
@@ -34,6 +42,10 @@
   }
   @media screen and (max-width: 480px) {
     display: none;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    display: table-cell;
+    padding-right: 50px;
   }
 }
 .site-nav::after {
@@ -67,19 +79,32 @@
   border-bottom: solid 6px var(--accent-color);
   padding-bottom: 23px;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 34px;
+  }
 }
 .header-mail-tel {
   align-items: center;
   font-weight: 500;
   margin-left: auto;
   list-style: none;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 .header-mail-tel .item + .item {
   padding-left: 50px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 }
 .header-center {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-bottom: 5px;
+  }
 }
 .link-icons-header:hover .icon-contacts-header,
 .link-icons-header:focus .icon-contacts-header {

@@ -15,6 +15,9 @@
 }
 .logo {
   margin-right: 45px;
+  @media screen and (max-width: 768px) {
+    margin-right: 80px;
+  }
 }
 .logo span {
   color: var(--accent-color);

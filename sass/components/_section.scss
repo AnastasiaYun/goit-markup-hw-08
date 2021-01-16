@@ -9,7 +9,10 @@ section {
     list-style: none;
   }
   @media screen and (max-width: 480px) {
+    padding-top: 60px;
     padding-bottom: 0;
+  }
+  @media screen and (max-width: 768px) {
   }
 }
 .section-features {
@@ -69,7 +72,9 @@ section {
   color: var(--primary-text-color);
   margin-top: 0;
   padding-bottom: 50px;
-  @media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
+  .mobile-no-text {
     display: none;
   }
 }
