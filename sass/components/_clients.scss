@@ -1,5 +1,7 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .clients-button {
   display: flex;
@@ -10,6 +12,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   margin-right: 30px;
+  margin-bottom: 30px;
   background: transparent;
   cursor: pointer;
 
@@ -21,6 +24,9 @@
     border-color: var(--accent-color);
   }
 }
+.clients-button:not(:last-child) {
+  margin-right: 30px;
+}
 .clients-icons {
   fill: var(--icons);
   transition-property: fill;
@@ -31,3 +37,36 @@
 .clients-button:focus .clients-icons {
   fill: var(--accent-color);
 }
+// .clients {
+//   display: flex;
+// }
+// .clients-button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 90px;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   margin-right: 30px;
+//   background: transparent;
+//   cursor: pointer;
+
+//   transition-property: border;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     border-color: var(--accent-color);
+//   }
+// }
+// .clients-icons {
+//   fill: var(--icons);
+//   transition-property: fill;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .clients-button:hover .clients-icons,
+// .clients-button:focus .clients-icons {
+//   fill: var(--accent-color);
+// }
