@@ -6,16 +6,30 @@
 .footer-container {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 }
 .footer-container-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: inherit;
+    align-items: baseline;
+  }
 }
 .footer-container-items {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .footer-contacts {
   font-size: 14px;
@@ -43,14 +57,20 @@
 .logo-footer span {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .tablet-style {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet-style {
+    display: flex;
+  }
+}
 /* Соц сети футера */
-
 .footer-icons {
   display: flex;
   list-style: none;
-}
-.footer-container-list {
-  display: flex;
 }
 .section-title-footer {
   color: var(--white-color);
@@ -86,6 +106,12 @@
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline;
+  }
 }
 /* Форма футера */
 .footer-form {
@@ -97,184 +123,122 @@
   color: var(--white-color);
   margin-top: 60px;
 }
-.form-field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 0.875px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+@media screen and (max-width: 1200px) {
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0.875px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .form-field-imput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .footer-form-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 380px;
+    height: 50px;
+    background: transparent;
+    padding-left: 16px;
+    color: var(--white-color);
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .telegramm-icon {
+    margin-left: 10px;
+  }
 }
-.form-field-imput {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
+
+@media screen and (min-width: 1200px) {
+  .section-title-footer {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    letter-spacing: 0.03em;
+  }
+  .link-social-icons-footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+    margin-right: 10px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .footer {
+    background: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .logo-footer span {
+    color: var(--accent-color);
+  }
+
+  /* Соц сети футера */
+
+  .footer-icons {
+    margin-left: 70px;
+  }
+  /* Форма футера */
+  .footer-form {
+    margin: 0 0 0 93px;
+  }
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 0.875px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .form-field-imput {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .footer-form-email {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 340px;
+    height: 50px;
+    background: transparent;
+    padding-left: 16px;
+    margin-right: 10px;
+    color: var(--white-color);
+    outline: none;
+  }
+  .telegramm-icon {
+    margin-left: 10px;
+  }
 }
-.footer-form-email {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 400px;
-  height: 50px;
-  background: transparent;
-  padding-left: 16px;
-  color: var(--white-color);
-  outline: none;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.telegramm-icon {
-  margin-left: 10px;
-}
-
-// .footer-container-list {
-//   display: flex;
-// }
-// .section-title-footer {
-//   color: var(--white-color);
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.142;
-//   text-transform: uppercase;
-//   padding-top: 15px;
-//   padding-bottom: 20px;
-//   letter-spacing: 0.03em;
-// }
-// .link-social-icons-footer {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 45px;
-//   height: 45px;
-//   border-radius: 50%;
-//   background-color: rgba(255, 255, 255, 0.1);
-//   fill: var(--white-color);
-//   margin-right: 10px;
-
-//   transition-property: background-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
-
-// .footer {
-//   background: var(--background);
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-// }
-// .footer-contacts {
-//   font-size: 14px;
-//   line-height: 1.714;
-//   letter-spacing: 0.03em;
-//   list-style: none;
-//   padding-top: 20px;
-// }
-// .footer-address,
-// .footer-address-mail-tel a {
-//   text-decoration: none;
-//   color: var(--white-color);
-//   padding-bottom: 10px;
-// }
-// .footer-address-mail-tel a {
-//   color: var(--white-color);
-//   opacity: 60%;
-//   padding-bottom: 10px;
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//     opacity: 100%;
-//   }
-// }
-
-// .logo-footer span {
-//   color: var(--accent-color);
-// }
-
-// /* Соц сети футера */
-
-// .footer-icons {
-//   display: flex;
-//   list-style: none;
-//   margin-left: 70px;
-// }
-// .footer-container-list {
-//   display: flex;
-// }
-// .section-title-footer {
-//   color: var(--white-color);
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.142;
-//   text-transform: uppercase;
-//   padding-top: 15px;
-//   padding-bottom: 20px;
-//   letter-spacing: 0.03em;
-// }
-// .link-social-icons-footer {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 45px;
-//   height: 45px;
-//   border-radius: 50%;
-//   background-color: rgba(255, 255, 255, 0.1);
-//   fill: var(--white-color);
-//   margin-right: 10px;
-
-//   transition-property: background-color;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
-// /* Форма футера */
-// .footer-form {
-//   margin-left: 93px;
-//   font-weight: bold;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: 0.875;
-//   text-transform: uppercase;
-//   color: var(--white-color);
-// }
-// .form-field {
-//   display: flex;
-//   flex-direction: column;
-//   padding-top: 15px;
-//   font-weight: bold;
-//   font-size: 14px;
-//   line-height: 0.875px;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-// }
-// .form-field-imput {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 20px;
-// }
-// .footer-form-email {
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   box-sizing: border-box;
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
-//   width: 340px;
-//   height: 50px;
-//   background: transparent;
-//   padding-left: 16px;
-//   margin-right: 10px;
-//   color: var(--white-color);
-//   outline: none;
-// }
-// .telegramm-icon {
-//   margin-left: 10px;
-// }

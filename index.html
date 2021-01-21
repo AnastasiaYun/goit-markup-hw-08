@@ -18,9 +18,9 @@
     <!-- навигация+лого -->
     <header class="header">
         <div class="container">
-            <nav class="main-nav">
+            <nav class="main-nav main-nav-center-tab">
                 <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-                <ul class="list">
+                <ul class="header-site-nav-tablet list">
                     <li class="site-nav item">
                         <a href="" class="nav-border current">Студия</a>
                     </li>
@@ -67,54 +67,57 @@
             <div class="container">
                 <!-- <h2>Особенности</h2> -->
                 <ul class="section-features list">
-                    <li class="features-icons">
-                        <div class="background">
-                            <svg class="icons-items" width="70" height="70">
-                                <use href="./img/sprite.svg#icon-antenna"></use>
-                            </svg>
-                        </div>
-                        <h3 class="section-title-features">Внимание к деталям</h3>
-                        <p class="selection-text">
-                            Идейные соображения, а также начало повседневной работы по
-                            формированию позиции.
-                        </p>
-                    </li>
-                    <li class="features-icons">
-                        <div class="background">
-                            <svg class="icons-items" width="70" height="70">
-                                <use href="./img/sprite.svg#icon-clock"></use>
-                            </svg>
-                        </div>
-                        <h3 class="section-title-features">Пунктуальность</h3>
-                        <p class="selection-text">
-                            Задача организации, в особенности же рамки и место обучения
-                            кадров влечет за собой.
-                        </p>
-                    </li>
-                    <li class="features-icons">
-                        <div class="background">
-                            <svg class="icons-items" width="70" height="70">
-                                <use href="./img/sprite.svg#icon-diagram"></use>
-                            </svg>
-                        </div>
-                        <h3 class="section-title-features">Планирование</h3>
-                        <p class="selection-text">
-                            Равным образом консультация с широким активом в значительной
-                            степени обуславливает.
-                        </p>
-                    </li>
-                    <li class="features-icons">
-                        <div class="background">
-                            <svg class="icons-items" width="70" height="70">
-                                <use href="./img/sprite.svg#icon-astronaut"></use>
-                            </svg>
-                        </div>
-                        <h3 class="section-title-features">Современные технологии</h3>
-                        <p class="selection-text">
-                            Значимость этих проблем настолько очевидна, что реализация
-                            плановых заданий.
-                        </p>
-                    </li>
+                    <div class="section-feauture-tab">
+                        <li class="features-icons">
+                            <div class="background">
+                                <svg class="icons-items" width="70" height="70">
+                                    <use href="./img/sprite.svg#icon-antenna"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-title-features">Внимание к деталям</h3>
+                            <p class="selection-text">
+                                Идейные соображения, а также начало повседневной работы по
+                                формированию позиции.
+                            </p>
+                        </li>
+                        <li class="features-icons">
+                            <div class="background">
+                                <svg class="icons-items" width="70" height="70">
+                                    <use href="./img/sprite.svg#icon-clock"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-title-features">Пунктуальность</h3>
+                            <p class="selection-text">
+                                Задача организации, в особенности же рамки и место обучения
+                                кадров влечет за собой.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="section-feauture-tab">
+                        <li class="features-icons">
+                            <div class="background">
+                                <svg class="icons-items" width="70" height="70">
+                                    <use href="./img/sprite.svg#icon-diagram"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-title-features">Планирование</h3>
+                            <p class="selection-text">
+                                Равным образом консультация с широким активом в значительной
+                                степени обуславливает.
+                            </p>
+                        </li>
+                        <li class="features-icons">
+                            <div class="background">
+                                <svg class="icons-items" width="70" height="70">
+                                    <use href="./img/sprite.svg#icon-astronaut"></use>
+                                </svg>
+                            </div>
+                            <h3 class="section-title-features">Современные технологии</h3>
+                            <p class="selection-text">
+                                Значимость этих проблем настолько очевидна, что реализаци плановых заданий.
+                            </p>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </section>
@@ -144,11 +147,16 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="section-names list">
                     <li class="section-names-shadow">
-                        <picture class="mobile-pic-size">
-                            <source srcset="./img/mobile/img.jpg 1x, ./img/mobile/img@2x.jpg 2x"
-                                media="(max-width: 480px)">
-                            <img src="./img/1.jpg" alt="Игорь" />
-                        </picture>
+                        <img class="img-names" srcset="
+                        ./img/mobile/img.jpg 480w,
+                        ./img/mobile/img@2x.jpg 900w,
+                        ./img/tablet/img.jpg 354w,
+                        ./img/tablet/img@2x.jpg 708w
+                        ./img/desktop/img.jpg 270w,
+                        ./img/desktop/img@2x.jpg 540w
+                        " src="./img/mobile/img.jpg" alt="Игорь" sizes="(min-width:1200px) 270px,
+                                               (min-width:768px) 354px,
+                                               (min-width:480px) 450px" />
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Игорь Демьяненко</h3>
                             <p class="section-title-position">Product Designer</p>
@@ -181,11 +189,16 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <picture class="mobile-pic-size">
-                            <source srcset="./img/mobile/img2.jpg 1x, ./img/mobile/img2@2x.jpg 2x"
-                                media="(max-width: 480px)">
-                            <img src="./img/2.jpg" alt="Ольга" />
-                        </picture>
+                        <img class="img-names" srcset="
+                       ./img/mobile/img2.jpg 480w,
+                        ./img/mobile/img2@2x.jpg 900w,
+                        ./img/tablet/img2.jpg 354w,
+                        ./img/tablet/img2@2x.jpg 708w
+                        ./img/desktop/img2.jpg 270w,
+                        ./img/desktop/img2@2x.jpg 540w
+                       " src="./img/mobile/img2.jpg" alt="Ольга" sizes="(min-width:1200px) 270px,
+                                               (min-width:768px) 354px,
+                                               (min-width:480px) 450px" />
                         <div class="section-title-name-position list">
                             <h3 class="section-title-names">Ольга Репина</h3>
                             <p class="section-title-position">Frontend Developer</p>
@@ -218,11 +231,16 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <picture class="mobile-pic-size">
-                            <source srcset="./img/mobile/img3.jpg 1x, ./img/mobile/img3@2x.jpg 2x"
-                                media="(max-width: 480px)">
-                            <img src="./img/3.jpg" alt="Николай" />
-                        </picture>
+                        <img class="img-names" srcset="
+                                               ./img/mobile/img3.jpg 480w,
+                                                ./img/mobile/img3@2x.jpg 900w,
+                                                ./img/tablet/img3.jpg 354w,
+                                                ./img/tablet/img3@2x.jpg 708w
+                                                ./img/desktop/img3.jpg 270w,
+                                                ./img/desktop/img3@2x.jpg 540w
+                                               " src="./img/mobile/img3.jpg" alt="Николай" sizes="(min-width:1200px) 270px,
+                                               (min-width:768px) 354px,
+                                               (min-width:480px) 450px" />
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Николай Тарасов</h3>
                             <p class="section-title-position">Marketing</p>
@@ -255,11 +273,17 @@
                         </div>
                     </li>
                     <li class="section-names-shadow">
-                        <picture class="mobile-pic-size">
-                            <source srcset="./img/mobile/img4.jpg 1x, ./img/mobile/img4@2x.jpg 2x"
-                                media="(max-width: 480px)">
-                            <img src="./img/4.jpg" alt="Михаил" />
-                        </picture>
+                        <img class="img-names" srcset="
+                                               ./img/mobile/img4.jpg 480w,
+                                                ./img/mobile/img4@2x.jpg 900w,
+                                                ./img/tablet/img4.jpg 354w,
+                                                ./img/tablet/img4@2x.jpg 708w
+                                                ./img/desktop/img4.jpg 270w,
+                                                ./img/desktop/img4@2x.jpg 540w
+                                               " src="./img/mobile/img4.jpg" alt="Михаил" sizes="
+                                               (min-width:1200px) 270px,
+                                               (min-width:768px) 354px,
+                                               (min-width:480px) 450px" />
                         <div class="section-title-name-position">
                             <h3 class="section-title-names">Михаил Ермаков</h3>
                             <p class="section-title-position">UI Designer</p>
@@ -348,51 +372,53 @@
     <!-- Подвал -->
     <footer class="footer">
         <div class="container footer-container-list">
-            <div class="footer-container">
-                <div class="footer-container-items">
-                    <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+            <div class="tablet-style">
+                <div class="footer-container">
+                    <div class="footer-container-items">
+                        <a href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+                    </div>
+                    <ul class="footer-contacts footer-container-items list">
+                        <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="footer-address-mail-tel">
+                            <a href="mailto:">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-address-mail-tel">
+                            <a href="tel:">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="footer-contacts footer-container-items list">
-                    <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li class="footer-address-mail-tel">
-                        <a href="mailto:">info@devstudio.com</a>
-                    </li>
-                    <li class="footer-address-mail-tel">
-                        <a href="tel:">+38 096 111 11 11</a>
+                <ul class="footer-icons list">
+                    <li class="footer-social-icons-mobile">
+                        <h3 class="section-title-footer">присоединяйтесь</h3>
+                        <div class="social-icons-mob">
+                            <a href="" class="link-social-icons-footer">
+                                <svg class="" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="" class="link-social-icons-footer">
+                                <svg class="" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="" class="link-social-icons-footer">
+                                <svg class="" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                            <a href="" class="link-social-icons-footer">
+                                <svg class="" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <ul class="footer-icons list">
-                <li class="footer-social-icons-mobile">
-                    <h3 class="section-title-footer">присоединяйтесь</h3>
-                    <div class="social-icons-mob">
-                        <a href="" class="link-social-icons-footer">
-                            <svg class="" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                        <a href="" class="link-social-icons-footer">
-                            <svg class="" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                        <a href="" class="link-social-icons-footer">
-                            <svg class="" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                        <a href="" class="link-social-icons-footer">
-                            <svg class="" width="20" height="20">
-                                <use href="./img/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </div>
-                </li>
-            </ul>
             <form action="#" class="footer-form">
                 <p class="form-field"> Подпишитесь на рассылку
                     <span class="form-field-imput">
