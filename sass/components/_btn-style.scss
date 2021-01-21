@@ -23,6 +23,10 @@
   padding-bottom: 50px;
   margin: 0;
   padding-left: 0;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .button-portfolio-item {
   background-color: var(--button-bgr);
@@ -53,9 +57,15 @@
 .button-portfolio {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 480px) {
+    justify-content: end;
+  }
 }
 .button-portfolio .item + .item {
   margin-left: 8px;
+  @media screen and (max-width: 480px) {
+    margin: 0 8px 8px 0;
+  }
 }
 .btn-center {
   display: flex;
