@@ -39,6 +39,10 @@
   &:focus {
     fill: var(--accent-color);
   }
+  @media screen and (max-width: 480px) {
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .is-hidden {
@@ -129,11 +133,17 @@
       line-height: 0.583;
       letter-spacing: 0.03em;
     }
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
   }
   & button {
     display: block;
     align-self: center;
     width: 200px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 40px 80px;
   }
 }
 
