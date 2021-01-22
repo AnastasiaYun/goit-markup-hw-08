@@ -1347,6 +1347,12 @@ section li {
   overflow: hidden;
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio-works-wrapper {
+    position: inherit;
+  }
+}
+
 .outline {
   border: 1px solid #ececec;
   margin-bottom: 30px;
