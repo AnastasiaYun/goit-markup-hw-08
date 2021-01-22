@@ -66,9 +66,9 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  @media screen and (max-width: 480px) {
-    position: inherit;
-  }
+  // @media screen and (max-width: 480px) {
+  //   position: initial;
+  // }
 }
 .outline {
   border: 1px solid #ececec;

@@ -196,6 +196,7 @@ p {
   .menu-container.is-open {
     display: block;
     border: 1px solid #ececec;
+    z-index: 1;
   }
   .menu-container.is-open .header-site-nav-tablet {
     display: block;
@@ -1345,12 +1346,6 @@ section li {
   position: relative;
   display: flex;
   overflow: hidden;
-}
-
-@media screen and (max-width: 480px) {
-  .portfolio-works-wrapper {
-    position: inherit;
-  }
 }
 
 .outline {

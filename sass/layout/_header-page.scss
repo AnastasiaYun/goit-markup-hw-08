@@ -122,6 +122,7 @@
   .menu-container.is-open {
     display: block;
     border: 1px solid #ececec;
+    z-index: 1;
     .header-site-nav-tablet {
       display: block;
     }
