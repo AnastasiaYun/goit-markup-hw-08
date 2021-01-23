@@ -36,18 +36,18 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
   list-style: none;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer-address,
 .footer-address-mail-tel a {
   text-decoration: none;
   color: var(--white-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .footer-address-mail-tel a {
   color: var(--white-color);
   opacity: 60%;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -78,8 +78,8 @@
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   letter-spacing: 0.03em;
 }
 .link-social-icons-footer {
@@ -167,8 +167,8 @@
     font-size: 14px;
     line-height: 1.142;
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     letter-spacing: 0.03em;
   }
   .link-social-icons-footer {
