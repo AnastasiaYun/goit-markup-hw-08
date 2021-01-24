@@ -25,7 +25,7 @@ p {
   margin-right: 0 auto;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
     padding-left: 15px;
@@ -35,13 +35,13 @@ p {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .container {
-    margin: 10px 0;
+    max-width: 768px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -80,9 +80,15 @@ p {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 10px 0 5px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -177,7 +183,7 @@ p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .menu-button {
     display: flex;
     width: 40px;
@@ -301,7 +307,7 @@ p {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -460,7 +466,7 @@ p {
   padding-top: 200px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero {
     display: flex;
     margin: 0;
@@ -479,7 +485,7 @@ p {
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-title {
     font-size: 26px;
     line-height: 1.615;
@@ -800,7 +806,7 @@ p {
   padding-left: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .button-portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -837,7 +843,7 @@ p {
   justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .button-portfolio {
     justify-content: end;
   }
@@ -847,7 +853,7 @@ p {
   margin-left: 8px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .button-portfolio .item + .item {
     margin: 0 8px 8px 0;
   }
@@ -882,8 +888,8 @@ section {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  margin-top: 45px;
+  margin-bottom: 35px;
 }
 
 section li {
@@ -894,8 +900,6 @@ section li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: -15px;
-  margin-left: 15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -944,9 +948,13 @@ section li {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  padding-top: 30px;
-  padding-bottom: 10px;
   margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title-features {
+    display: block;
+  }
 }
 
 .section-title {
@@ -969,7 +977,7 @@ section li {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -980,8 +988,8 @@ section li {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    padding-top: 95px;
-    padding-bottom: 95px;
+    margin-top: 95px;
+    margin-bottom: 95px;
   }
   section li {
     list-style: none;
@@ -1134,6 +1142,12 @@ section li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-names-shadow {
+    margin-bottom: 40px;
+  }
 }
 
 .decoration-no {

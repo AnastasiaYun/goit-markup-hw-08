@@ -57,7 +57,7 @@
   margin: 0;
   padding-bottom: 200px;
   padding-top: 200px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     margin: 0;
     padding: 0;
@@ -72,7 +72,7 @@
   text-transform: uppercase;
   color: var(--white-color);
   padding-bottom: 30px;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 26px;
     line-height: 1.615;
     padding: 118px 30px 30px;
