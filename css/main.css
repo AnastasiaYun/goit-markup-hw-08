@@ -1462,6 +1462,13 @@ section li {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 460px;
+    height: 609px;
+  }
+}
+
 .close-btn {
   display: inline-flex;
   border-radius: 50px;
@@ -1485,7 +1492,7 @@ section li {
 @media screen and (max-width: 480px) {
   .close-btn {
     top: 15px;
-    right: 35px;
+    right: 20px;
   }
 }
 
@@ -1602,7 +1609,7 @@ section li {
 
 @media screen and (max-width: 480px) {
   .form-modal {
-    padding: 40px 80px;
+    padding: 40px 40px;
   }
 }
 
