@@ -888,7 +888,6 @@ section {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  margin-top: 45px;
   margin-bottom: 35px;
 }
 
@@ -900,6 +899,13 @@ section li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-features {
+    margin-top: 35px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -948,10 +954,11 @@ section li {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .section-title-features {
     display: block;
   }
@@ -964,8 +971,8 @@ section li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 0;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -988,7 +995,7 @@ section li {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    margin-top: 95px;
+    margin-top: 0;
     margin-bottom: 95px;
   }
   section li {
@@ -1012,9 +1019,8 @@ section li {
     font-size: 14px;
     line-height: 1.142;
     text-transform: uppercase;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   section .section-features .selection-text {
     width: 270px;
@@ -1185,7 +1191,6 @@ section li {
   .team {
     background-color: var(--bacground-secondary);
     margin-bottom: 0;
-    padding-top: 95px;
   }
   .section-names {
     display: flex;
@@ -1446,6 +1451,7 @@ section li {
 
 .no-margin-bottom {
   padding-bottom: 65px;
+  padding-top: 60px;
 }
 
 .no-padding-bottom {
